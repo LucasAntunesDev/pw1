@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1><i>Formulários</i></h1>
+    <br action="" method="post">
+    <label>
+    <fieldset><legend>Dados pessoais</legend>
+      <label><i>Nome: </i></label>
+      <input type="text" name="Nome" placeholder="Entre com o seu nome"/>
+      <br><br/>
+    <label><i>Sobrenome:</i></label>
+    <input type="text" name="Sobrenome" placeholder="Entre com o seu sobrenome">
+    <br><br/>
+    <label><i>Nota:</i></label>
+    <input type="number" name="Nota" placeholder="Nota" min="0" max="10" step="0.1">
+    <br></br>
+    <label><i>Email:</i></label>
+    <input type="email" name="Email" placeholder="Email">
+    <br></br>
+    <label><i>Cor favorita:</i></label>
+    <input type="color" name="cor">
+    <br></br>
+    <label><i>Data de nascimento:</i></label>
+    <input type="date" name="dataNascimento">
+    <br></br>
+    <label><i>Hora:</i></label>
+    <input type="time" name="Hora" step="900">
+    <br></br>
+    <label for=""><i>Senha:</i></label>
+    <input type="password" name="senha" placeholder="Senha">
+    </fieldset>
+    
+    <br></br>
+    <label><i>Qual nota você indica para este estabelecimento?</i></label>
+    0
+    <input type="range" name="estrelas" min="1" value="2" max="5" step="1">
+    5
+    <br></br>
+    <label><i></i></label>
+    <input type="hidden" name="id" value="3">
+    <label for=""><i>Arquivo:</i></label>
+    <input type="file" name="foto">
+    <br></br>
+    
+    <h2><i>Checkbox</i></h2>
+    <h2><i>Permitir que o usuário selecione mais de uma opção</i></h2>
+    <fieldset>
+      <legend>Selecione as disciplinas favoritas</legend>
+    <ul type="none">
+      <li>
+        <input id="mat" type="checkbox" name="disciplinas[]" value="MAT"><label for="mat">Matemática</label>
+      </li>
+      <li>
+        <input id="por" type="checkbox" name="disciplinas[]" value="POR"><label for="por">Português</label>
+      </li>
+      <li>
+        <input id="qui" type="checkbox" name="disciplinas[]" value="QUI"><label for="qui">Química</label>
+      </li>
+      <li>
+        <input id="fis" type="checkbox" name="disciplinas[]" value="FIS"><label for="fis">Física</label>
+      </li>
+    </ul type="none"> 
+  </fieldset>
+    <label ><i>Times</i></label >
+    <input type="checkbox" name="opcoes[]">
+    <br>
+    <label><i>Redes Sociais</i></label>
+    <input type="checkbox" name="opcoes[]">
+    <br>
+    <label><i>Jogos</i></label>
+    <input type="checkbox" name="opcoes[]">
+    <br>
+    <label><i>Consoles</i></label>
+    <input type="checkbox" name="opcoes[]">
+    <br></br>
+    <h2><i>Permitir que o usuário selecione apenmas uma opção</i></h2>
+    <ul type="none">
+      <li>
+        <input id="m" type="radio" name="turno" value="manha"/> <label for="m"><b>Manhã</b></label>
+      </li>
+      <li>
+        <input id="t" type="radio" name="turno" value="tarde"/> <label for="t"><b>Tarde</b></label>
+      </li>
+      <li>
+        <input id="n" type="radio" name="turno" value="noite"/> <label for="n"><b>Noite</b></label>
+      </li>
+    </ul type="none">
+    <h2><i>Escolha um curso</i></h2>
+    <ul type="none">
+      <li>
+        <input id="info" type="radio" name="curso" value="info"/> <label for="info"><b>Info</b></label>
+      </li>
+      <li>
+        <input id="agro" type="radio" name="curso" value="agro"/> <label for="agro"><b>Agro</b></label>
+      </li>
+    </ul type="none">
+    <h6>Quanto é 2+2?
+      <ul>
+        <li>
+          <input type="radio" name="q1" id="q1" value="a"><label>0</label>
+        </li>
+        <li>
+          <input type="radio" name="q1" id="q1" value="b"><label>1</label>
+        </li>
+        <li>
+          <input type="radio" name="q1" id="q1" value="c"><label>2</label>
+        </li>
+        <li>
+          <input type="radio" name="q1" id="q1" value="d"><label>3</label>
+        </li>
+        <li>
+          <input type="radio" name="q1" id="q1" value="e"><label>4</label>
+        </li>
+      </ul type="none">
+    </h6>
+    <i>Você estuda no <b>IFRS?</b></i>
+    <br>
+    <input id="sim" type="radio" name="estuda" value="s"> Sim
+    <input id="nao" type="radio" name="estuda" value="n"> Não
+    <br></br>
+    <h2><i>Button</i></h2>
+    <input type="button" value="Clique aqui">
+    <br></br>
+    <input type="reset" value="Limpar">
+    <br></br>
+    <button type="submit">Enviar dados</button>
+    <br></br>
+    <h2><i>Text Area</i></h2>
+    <label for=""></label>
+    <textarea name="" id="" cols="20" rows="10"></textarea>
+
+    <br></br>
+    <fieldset>
+      <legend>Endereço</legend>
+    <ul>
+      <li>
+        <label for="numero">Rua</label>
+        <input type="text" name="rua" id="rua">
+      </li>
+      <li>
+        <label for="numero">Número</label>
+        <input type="text" name="numero" id="numero">
+      </li>
+      <li>
+        <label for="complemento">Complemento</label>
+        <input type="text" name="complemento" id="complemento">
+      </li>
+      <li>
+        <label for="bairro"><i>Bairro</i></label>
+        <input type="text" name="bairro" id="bairro">
+      </li>
+      <li>
+        <label for="cidade"><i>Cidade</i></label>
+        <input type="text" name="cidade" id="cidade">
+      </li>
+      <label for="etados">Estados</label>
+      <select name="estados[]" multiple id="etados">
+        <!--<option value="-1">Selecione</option>!-->
+        <option value="RS">Rio Grande do Sul</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="SP">São Paulo</option>
+      </select>
+    </ul>
+      </fieldset>
+    </form>
+</body>
+</html>
