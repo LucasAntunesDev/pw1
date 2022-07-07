@@ -1,0 +1,27 @@
+div.descricao{
+    background-color: aqua;
+    color: purple;
+    text-align: justify;
+    text-align-last: center;
+    text-indent: 50px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    white-space: nowrap;
+    overflow-x:hidden;
+    text-overflow:ellipsis;
+}
+h2 {
+    color: red;
+        text-decoration-line: overline underline;
+        text-decoration-color: aquamarine;
+        text-decoration-style: dotted;
+        text-decoration-thickness: 5px;
+    }
+    .lista{
+        text-transform: uppercase;
+    }
+    div.sombra{
+        color: yellow;
+        text-shadow: 1px 1px  2px black; 
+    }
+    
