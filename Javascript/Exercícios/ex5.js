@@ -10,14 +10,15 @@ var nota1 = parseFloat(prompt("Digite a nota do 1º trimestre: "))
 var nota2 = parseFloat(prompt("Digite a nota do 2º trimestre: "))
 var nota3 = parseFloat(prompt("Digite a nota do 3º trimestre: "))
 var media = (nota1 + nota2 + nota3) / 3
+var texto = 'Você está '
 
 console.log(media)
 
 if(media >= 7){
-    alert("Aprovado")
+    alert(texto + "aprovado! Parabéns!")
 }
 else if(media >= 5){
-    alert("Exame")
+    alert(texto + "Em exame!")
 }else{
-    alert("Reprovado")
+    alert(texto + "reprovado!")
 }
