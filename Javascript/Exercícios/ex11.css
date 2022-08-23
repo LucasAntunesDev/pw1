@@ -1,0 +1,12 @@
+*{
+    outline: 0px;
+}
+
+body{
+    background-color: rgb(31, 28, 28);
+    color: whitesmoke;
+}
+
+form{
+    display: none;
+}
