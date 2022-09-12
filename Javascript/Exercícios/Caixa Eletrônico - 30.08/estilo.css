@@ -1,0 +1,31 @@
+body{
+    background-color:rgb(22, 22, 22);
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+}
+
+#btns{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+button{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 15px;
+}
+
+#v{
+    background-color: green;
+    color: whitesmoke;
+}
+#s{
+    background-color: crimson;
+    color: whitesmoke;
+}
+#d{
+    background-color: rgb(0, 140, 255);
+    color: whitesmoke;
+}

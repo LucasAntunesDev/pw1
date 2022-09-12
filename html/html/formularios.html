@@ -5,6 +5,48 @@
     <title>Formulários</title>
 </head>
 <body>
+    <!-- Os formulários são utilizados com o objetivo de coletar dados do usuário. Esses, por sua
+  vez, na maioria das vezes, são enviados para serem processados no servidor. Também é
+  possível utilizar esses dados no próprio cliente, como por exemplo, para implementar uma
+  calculadora. No servidor, podemos armazenar os dados recebidos, ou ainda, atualizar o que
+  já está presente.
+  Para criar um formulário utilizamos o elemento <form>. Ele funciona como um contêiner
+  para os elementos que coletam as informações do usuário. É possível definir alguns
+  atributos que complementam a funcionalidade do formulário. O atributo action é utilizado
+  para especificar o destino, ou seja, para onde os dados serão enviados. Caso o atributo não
+  seja especificado, o destino será a página atual. O atributo target define onde será exibida a
+  resposta do envio do formulário. O valor padrão para este atributo é _self (mostra o
+  resultado na janela atual). Já o atributo method define o método HTTP utilizado para enviar
+  os dados do formulário. Pode ser através do método GET ou do POST. O valor padrão é o
+  GET. Além desses atributos, o formulário permite definir outros dois: autocomplete e
+  novalidate. O primeiro permite que o navegador preencha automaticamente os campos
+  baseados no valor informado anteriormente. Já o segundo define que os dados do
+  formulário não sejam validados.
+    
+    Elementos de entrada de dados
+  Existem diversos tipos de elementos que podem ser utilizados. Alguns atributos são
+  essenciais e precisam ser definidos. Todo elemento que enviará dados para o servidor,
+  precisa ter o atributo name informado. Podemos definir um atributo placeholder para mostrar
+  uma dica para o usuário.
+  Elemento <input>
+  Esse é o elemento mais utilizado, uma vez que diversas formas de entradas de usuários são
+  representadas por ele. Isso é possível definindo o atributo type do elemento. Podem ser
+  utilizados os tipos: text, password, number, email, time, date, color, radio, checkbox. Se
+  precisar informar um valor inicial para o elemento, basta definir o atributo value.
+
+  Elemento <textarea>
+Esse elemento permite que o usuário preencha um campo com múltiplas linhas. Para
+informar um valor inicial, é necessário colocá-lo como elemento filho do textarea.
+
+  Elemento <select>
+Este elemento é mostrado como uma caixa de seleção. Ele permite que o usuário selecione
+1 ou mais itens dentro de um conjunto definido.
+
+  Elemento <button>
+Elemento utilizado para interagir com o usuário. É possível definir um comportamento como
+ação do botão. Quando o type do elemento estiver definido como submit, então o envio do
+formulário será ativado. -->
+    
     <h1><i>Formulários</i></h1>
     <br action="" method="post">
     <label>
