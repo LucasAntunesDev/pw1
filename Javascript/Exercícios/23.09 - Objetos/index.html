@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        /* body{
+            background-color:rgb(34, 34, 34);
+        } */
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        button {
+            border: none;
+            border-radius: 10px;
+            padding: 5px;
+            background-color: rgb(0, 153, 255);
+            color: white;
+            margin: auto;
+        }
+
+        button:hover {
+            scale: 1.1;
+        }
+
+        div {
+            border: solid 2px black;
+            height: 20px;
+            width: 100px;
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+        #nome {
+            margin-right: 20px;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            border: none !important;
+            margin: auto;
+        }
+    </style>
+
+    <!-- <button onClick="mostar()" type="button">
+        Mostrar pessoa
+    </button> -->
+
+    <button onClick="mostarEstados('sul')" type="button">
+        Mostrar Sul
+    </button>
+
+    <button onClick="mostarEstados('sudeste')" type="button">
+        Mostrar Sudeste
+    </button>
+
+    <div id="container">
+        <div id="nome"> </div>
+        <div id="sobrenome"> </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
