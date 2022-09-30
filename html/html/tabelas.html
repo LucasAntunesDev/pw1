@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabelas</title>
+</head>
+<body>
+    <h1><i>Tabelas</i></h1>
+    <!-- Tabelas
+As tabelas são utilizadas para apresentar dados tabulados. Para representar uma tabela é
+utilizada a tag <table>. Uma tabela é formada por linhas e colunas. As linhas são
+representadas pela tag <tr> e as colunas pela tag <td>.
+Uma tabela possui 3 segmentos: cabeçalho, corpo e rodapé. O cabeçalho é representado
+pela tag <thead>, a corpo da tabela pela tag <tobdy> e o rodapé pela tag <tfoot>. Por
+padrão, quando nenhum segmento é informado, o navegador considera que todas as linhas
+e colunas estão no segmento do corpo da tabela. Além disso, quando o cabeçalho for
+definido, é utilizada a tag <th> para representar uma coluna.
+    É possível definir uma legenda para a tabela. Para isso é utilizada a tag <caption>. A tag,
+quando definida, precisa ser o primeiro elemento filho da tag <table>.
+    Outra característica das tabelas é a possibilidade de unir células. Só é possível unir células
+adjacentes em linhas ou colunas. Para definir uma união de células, são utilizadas as tags
+rowspan (para unir células adjacentes em linhas diferentes) e colspan (para unir células
+adjacentes em colunas diferentes). -->
+    <h1><i>QUADRO DE MEDALHAS 2021</i></h1>
+    <table border="4">
+        <thead>
+            <tr>
+                <th><i>País</i></th>
+                <th><img src="../Imagens/download.png" alt=""></th>
+                <th><img src="../Imagens/download (1).png" alt=""></th>
+                <th><img src="../Imagens/download (2).png" alt=""></th>
+                <th><img src="../Imagens/download (3).png" alt=""></th>
+            </tr>
+        </thead>
+        <tbody>
+            </tr>
+            <tr>
+                <td><img src="../Imagens/EUA.png" alt="Estados Unidos">Estados Unidos</td> 
+               <td>39</td>
+               <td>41</td>
+               <td>33</td>
+               <td>113</td>
+            </tr>
+            <tr>
+                <td><img src="../Imagens/China.png" alt="China">China</td> 
+               <td>38</td>
+               <td>32</td>
+               <td>18</td>
+               <td>88</td>
+            </tr>
+            <tr>
+                <td><img src="../Imagens/JP.png" alt="Japão">Japão</td> 
+               <td>27</td>
+               <td>14</td>
+               <td>17</td>
+               <td>58</td>
+            </tr>
+            <tr>
+                <td><img src="../Imagens/ENG.png" alt="Grã-Bretanha">Grã-Bretanha</td> 
+               <td>22</td>
+               <td>21</td>
+               <td>22</td>
+               <td>65</td>
+            </tr>
+            <tr>
+                <td><img src="../Imagens/RSS.png" alt="Comitê Olímpico Russo">Comitê Olímpico Russo</td> 
+               <td>20</td>
+               <td>28</td>
+               <td>23</td>
+               <td>71</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td><b><i>TOTAIS</i></b</td>
+                <td>146</td>
+                <td>136</td>
+                <td>113</td>
+                <td>395</td>
+            </tr>
+        </tfoot>
+    <br>
+    <br>
+    </table>
+    <br><table border="4">
+        <thead>
+            <th>Nome</th>
+            <th>Idade</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lucas</td>
+                <td>16</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td>
+                Quantidade de pessoas
+            </td>
+            <td>1</td>
+        </tfoot>
+    </table>
+    
+    <br>
+        <table border="1" width="300px"> 
+            <tbody>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                <td colspan="2" rowspan="">1</td>
+                <td colspan="3" rowspan="">3</td>
+             
+                </tr>
+                <tr>
+                    <td colspan="3" rowspan="">6</td>
+                    <td colspan="" rowspan="2">9</td>
+                    <td colspan="" rowspan="4">10</td>
+                </tr>
+                <tr>
+                    <td colspan="" rowspan="">11</td>
+                    <td colspan="2" rowspan="2">12</td>
+                </tr>
+                <tr>
+                    <td colspan="" rowspan="2">16</td>
+                    <td colspan="" rowspan="">19</td>
+                </tr>
+                <tr>
+                    <td colspan="2" rowspan="">22</td>
+                    <td colspan="" rowspan="">24</td>
+                </tr>
+            </tbody>
+        </table>
+</body>
+</html>

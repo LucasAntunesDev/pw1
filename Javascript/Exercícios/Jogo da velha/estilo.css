@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(35,35,35);
+    background-color: black;
+}
+
+h1,p{
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+    text-align: center;
+}
+
+button{
+    background-color: green;
+    color: whitesmoke;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#botao{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#campoTabuleiro{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#tab{
+    border: solid 2px gray;
+    width: 500px;
+    height: 500px;
+}
+
+td, th{
+ width: 50px;
+ border: solid 2px  gray;
+}
+
+#tab td, th{
+    background-color: whitesmoke;
+}
+
+#um p{
+    visibility: hidden;
+    cursor: none;
+}

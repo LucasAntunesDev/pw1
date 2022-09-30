@@ -1,0 +1,15 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contador {
+    text-align: center;
+    font-size: 100pt;
+}
+
+button{
+    padding: 5px;
+    border-radius: 10px;
+}

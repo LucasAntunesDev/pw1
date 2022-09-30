@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulários</title>
+</head>
+<body>
+    <!-- Os formulários são utilizados com o objetivo de coletar dados do usuário. Esses, por sua
+  vez, na maioria das vezes, são enviados para serem processados no servidor. Também é
+  possível utilizar esses dados no próprio cliente, como por exemplo, para implementar uma
+  calculadora. No servidor, podemos armazenar os dados recebidos, ou ainda, atualizar o que
+  já está presente.
+  Para criar um formulário utilizamos o elemento <form>. Ele funciona como um contêiner
+  para os elementos que coletam as informações do usuário. É possível definir alguns
+  atributos que complementam a funcionalidade do formulário. O atributo action é utilizado
+  para especificar o destino, ou seja, para onde os dados serão enviados. Caso o atributo não
+  seja especificado, o destino será a página atual. O atributo target define onde será exibida a
+  resposta do envio do formulário. O valor padrão para este atributo é _self (mostra o
+  resultado na janela atual). Já o atributo method define o método HTTP utilizado para enviar
+  os dados do formulário. Pode ser através do método GET ou do POST. O valor padrão é o
+  GET. Além desses atributos, o formulário permite definir outros dois: autocomplete e
+  novalidate. O primeiro permite que o navegador preencha automaticamente os campos
+  baseados no valor informado anteriormente. Já o segundo define que os dados do
+  formulário não sejam validados.
+    
+    Elementos de entrada de dados
+  Existem diversos tipos de elementos que podem ser utilizados. Alguns atributos são
+  essenciais e precisam ser definidos. Todo elemento que enviará dados para o servidor,
+  precisa ter o atributo name informado. Podemos definir um atributo placeholder para mostrar
+  uma dica para o usuário.
+  Elemento <input>
+  Esse é o elemento mais utilizado, uma vez que diversas formas de entradas de usuários são
+  representadas por ele. Isso é possível definindo o atributo type do elemento. Podem ser
+  utilizados os tipos: text, password, number, email, time, date, color, radio, checkbox. Se
+  precisar informar um valor inicial para o elemento, basta definir o atributo value.
+
+  Elemento <textarea>
+Esse elemento permite que o usuário preencha um campo com múltiplas linhas. Para
+informar um valor inicial, é necessário colocá-lo como elemento filho do textarea.
+
+  Elemento <select>
+Este elemento é mostrado como uma caixa de seleção. Ele permite que o usuário selecione
+1 ou mais itens dentro de um conjunto definido.
+
+  Elemento <button>
+Elemento utilizado para interagir com o usuário. É possível definir um comportamento como
+ação do botão. Quando o type do elemento estiver definido como submit, então o envio do
+formulário será ativado. -->
+    
+    <h1><i>Formulários</i></h1>
+    <br action="" method="post">
+    <label>
+    <fieldset><legend>Dados pessoais</legend>
+      <label><i>Nome: </i></label>
+      <input type="text" name="Nome" placeholder="Entre com o seu nome"/>
+      <br><br/>
+    <label><i>Sobrenome:</i></label>
+    <input type="text" name="Sobrenome" placeholder="Entre com o seu sobrenome">
+    <br><br/>
+    <label><i>Nota:</i></label>
+    <input type="number" name="Nota" placeholder="Nota" min="0" max="10" step="0.1">
+    <br></br>
+    <label><i>Email:</i></label>
+    <input type="email" name="Email" placeholder="Email">
+    <br></br>
+    <label><i>Cor favorita:</i></label>
+    <input type="color" name="cor">
+    <br></br>
+    <label><i>Data de nascimento:</i></label>
+    <input type="date" name="dataNascimento">
+    <br></br>
+    <label><i>Hora:</i></label>
+    <input type="time" name="Hora" step="900">
+    <br></br>
+    <label for=""><i>Senha:</i></label>
+    <input type="password" name="senha" placeholder="Senha">
+    </fieldset>
+    
+    <br></br>
+    <label><i>Qual nota você indica para este estabelecimento?</i></label>
+    0
+    <input type="range" name="estrelas" min="1" value="2" max="5" step="1">
+    5
+    <br></br>
+    <label><i></i></label>
+    <input type="hidden" name="id" value="3">
+    <label for=""><i>Arquivo:</i></label>
+    <input type="file" name="foto">
+    <br></br>
+    
+    <h2><i>Checkbox</i></h2>
+    <h2><i>Permitir que o usuário selecione mais de uma opção</i></h2>
+    <fieldset>
+      <legend>Selecione as disciplinas favoritas</legend>
+    <ul type="none">
+      <li>
+        <input id="mat" type="checkbox" name="disciplinas[]" value="MAT"><label for="mat">Matemática</label>
+      </li>
+      <li>
+        <input id="por" type="checkbox" name="disciplinas[]" value="POR"><label for="por">Português</label>
+      </li>
+      <li>
+        <input id="qui" type="checkbox" name="disciplinas[]" value="QUI"><label for="qui">Química</label>
+      </li>
+      <li>
+        <input id="fis" type="checkbox" name="disciplinas[]" value="FIS"><label for="fis">Física</label>
+      </li>
+    </ul type="none"> 
+  </fieldset>
+    <label ><i>Times</i></label >
+    <input type="checkbox" name="opcoes[]">
+    <br>
+    <label><i>Redes Sociais</i></label>
+    <input type="checkbox" name="opcoes[]">
+    <br>
+    <label><i>Jogos</i></label>
+    <input type="checkbox" name="opcoes[]">
+    <br>
+    <label><i>Consoles</i></label>
+    <input type="checkbox" name="opcoes[]">
+    <br></br>
+    <h2><i>Permitir que o usuário selecione apenmas uma opção</i></h2>
+    <ul type="none">
+      <li>
+        <input id="m" type="radio" name="turno" value="manha"/> <label for="m"><b>Manhã</b></label>
+      </li>
+      <li>
+        <input id="t" type="radio" name="turno" value="tarde"/> <label for="t"><b>Tarde</b></label>
+      </li>
+      <li>
+        <input id="n" type="radio" name="turno" value="noite"/> <label for="n"><b>Noite</b></label>
+      </li>
+    </ul type="none">
+    <h2><i>Escolha um curso</i></h2>
+    <ul type="none">
+      <li>
+        <input id="info" type="radio" name="curso" value="info"/> <label for="info"><b>Info</b></label>
+      </li>
+      <li>
+        <input id="agro" type="radio" name="curso" value="agro"/> <label for="agro"><b>Agro</b></label>
+      </li>
+    </ul type="none">
+    <h6>Quanto é 2+2?
+      <ul>
+        <li>
+          <input type="radio" name="q1" id="q1" value="a"><label>0</label>
+        </li>
+        <li>
+          <input type="radio" name="q1" id="q1" value="b"><label>1</label>
+        </li>
+        <li>
+          <input type="radio" name="q1" id="q1" value="c"><label>2</label>
+        </li>
+        <li>
+          <input type="radio" name="q1" id="q1" value="d"><label>3</label>
+        </li>
+        <li>
+          <input type="radio" name="q1" id="q1" value="e"><label>4</label>
+        </li>
+      </ul type="none">
+    </h6>
+    <i>Você estuda no <b>IFRS?</b></i>
+    <br>
+    <input id="sim" type="radio" name="estuda" value="s"> Sim
+    <input id="nao" type="radio" name="estuda" value="n"> Não
+    <br></br>
+    <h2><i>Button</i></h2>
+    <input type="button" value="Clique aqui">
+    <br></br>
+    <input type="reset" value="Limpar">
+    <br></br>
+    <button type="submit">Enviar dados</button>
+    <br></br>
+    <h2><i>Text Area</i></h2>
+    <label for=""></label>
+    <textarea name="" id="" cols="20" rows="10"></textarea>
+
+    <br></br>
+    <fieldset>
+      <legend>Endereço</legend>
+    <ul>
+      <li>
+        <label for="numero">Rua</label>
+        <input type="text" name="rua" id="rua">
+      </li>
+      <li>
+        <label for="numero">Número</label>
+        <input type="text" name="numero" id="numero">
+      </li>
+      <li>
+        <label for="complemento">Complemento</label>
+        <input type="text" name="complemento" id="complemento">
+      </li>
+      <li>
+        <label for="bairro"><i>Bairro</i></label>
+        <input type="text" name="bairro" id="bairro">
+      </li>
+      <li>
+        <label for="cidade"><i>Cidade</i></label>
+        <input type="text" name="cidade" id="cidade">
+      </li>
+      <label for="etados">Estados</label>
+      <select name="estados[]" multiple id="etados">
+        <!--<option value="-1">Selecione</option>!-->
+        <option value="RS">Rio Grande do Sul</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="SP">São Paulo</option>
+      </select>
+    </ul>
+      </fieldset>
+    </form>
+</body>
+</html>

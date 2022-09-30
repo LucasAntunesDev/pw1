@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <H1 style="margin-top:20px;">Jogo da Velha</H1>
+
+    <button id="botao" onClick="mudarBtn()" type="button">Começar Jogo</button>
+
+    <div id="campoTabuleiro">
+        <table id="tab">
+            <tr>
+                <td onClick="jogar(this)" class="celula"" id="um"><p>f</p></td>
+                <td onClick="jogar(this)" class="celula"" id="dois"><p>f</p></td>
+                <td onClick="jogar(this)" class="celula"" id="tres"><p>f</p></td>
+            </tr>
+
+            <tr>
+                <td onClick="jogar(this)" class="celula"" id="4"><p>f</p></td>
+                <td onClick="jogar(this)" class="celula"" id="5"><p>f</p></td>
+                <td onClick="jogar(this)" class="celula"" id="6"><p>f</p></td>
+            </tr>
+
+            <tr>
+                <td onClick="jogar(this)" class="celula"" id="7"><p>f</p></td>
+                <td onClick="jogar(this)" class="celula"" id="8"><p>f</p></td>
+                <td onClick="jogar(this)" class="celula"" id="9"><p>f</p></td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
