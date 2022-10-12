@@ -8,4 +8,5 @@ const nome = prompt("Qual o seu nome?")
 const idade = prompt("Quantos anos você tem?")
 const idadeDias = idade * 365
 
-alert(nome + ", você tem " + idadeDias +" dias de idade")
+//alert(nome + ", você tem " + idadeDias +" dias de idade")
+alert(`${nome}, você tem ${idadeDias} dias de idade!`)

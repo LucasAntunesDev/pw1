@@ -1,4 +1,4 @@
-//Faça um scrpt que receba o preço de um 
+//Faça um script que receba o preço de um 
 //produto e o percentual de desconto.
 // Mostre para o usuário o valor final com
 // o desconto.

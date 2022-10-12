@@ -11,5 +11,6 @@ NE -> Nota Exame*/
 const nf = parseInt(prompt ("Digite a nota final: "))
 if (nf < 7){
 var ne = (50-6*nf)/4
-alert("Você precisa tirar" + ne.toFixed(1))
+var neTruncada = ne.toFixed(1)
+alert(`Você precisa tirar ${neTruncada}`)
 }

@@ -15,10 +15,10 @@ var texto = 'Você está '
 console.log(media)
 
 if(media >= 7){
-    alert(texto + "aprovado! Parabéns!")
+    alert(`${texto}aprovado! Parabéns!`)
 }
 else if(media >= 5){
-    alert(texto + "Em exame!")
+    alert(`${texto}em exame!`)
 }else{
-    alert(texto + "reprovado!")
+    alert(`${texto}reprovado!`)
 }
