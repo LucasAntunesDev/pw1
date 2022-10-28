@@ -1,4 +1,4 @@
-//0)Faça um script que mostre todos os valorws do vetor, um de cada vez.
+//0)Faça um script que mostre todos os valores do vetor, um de cada vez.
 
 
 // const vetor = [1, 2, 3, 5];
