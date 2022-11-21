@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relação de Produtos</title>
+</head>
+
+<body class="bg-slate-900 text-white">
+    <button type="button" id="btn" class="border-none bg-sky-500 p-2 rounded-lg shadow-md hover:shadow-blue-500/80 shadow-blue-800/80">Todos</button>
+    <table id="produtos">
+        <thead>
+            <tr>
+                <td>Nome</td>
+                <td>Quantidade</td>
+            </tr>
+        </thead>
+        <tbody id="corpo"></tbody>
+    </table>
+    <script src="scripts.js"></script>
+
+    <style>
+        * {
+            text-align: center;
+            margin: 0 auto;
+            font-family: monospace;
+        }
+
+        table {
+            border: solid 2px white;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        button {
+            border: none;
+            background-color: cornflowerblue;
+            padding: 5px;
+            margin-top: 10px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        button:hover {
+            /* scale: 1.1; */
+            transition: all .0.5s;
+            /* box-shadow: 0 4px 6px -1px cornflowerblue, 0 2px 4px -2px cornflowerblue; */
+        }
+    </style>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>
