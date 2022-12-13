@@ -10,15 +10,11 @@
 
     
     <h1>Perguntas</h1>
-    <form id="form" style="margin-bottom:4rem;">
+
+    <form id="form">
     </form>
     <button id="botao">Ver respostas</button>
-    
-    
-    
-    
-    
-    
+   
     <style>
         *{
             font-family: monospace;
@@ -38,12 +34,22 @@
             border-radius: 1rem;
             padding: 0.5rem;
             color: white;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all .1s;
+        }
+        button:hover{
+            background: rgb(19, 172, 88);
+            transition: all .1s;
         }
         #div-respostas{
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
+        }
+        form{
+            margin-bottom: 1.6rem;
         }
         </style>
 

@@ -4,23 +4,24 @@ const letras = ['A','B','C','D','E','F','G','H',
 'V','W','X','Y','Z'];
 
 
-let erros = 0
+let errors = 0
 let acertos = 0
 
 const verificaFimJogo = () => {
 
+    console.log(`./imgs/forca-${errors}.png`)
     document.getElementById('forca').setAttribute(
-        'src', `./imgs/forca-${erros}.png`
+        'src', `./imgs/forca-${errors}.png`
     )
 
 
-    if (erros === 6 || acertos === objetivo.length) alert('FIM DO JOGO')
+    if (errors === 6 || acertos === objetivo.length) alert('FIM DO JOGO')
 }
 
 const jogada = (l) => {
     console.log(l)
     if (objetivo.every(letra => letra !== l)){
-        erros++
+        errors++
     }else{
         for(let i = 0; i < objetivo.length; i++){
             if (objetivo[i] === l){
@@ -42,11 +43,10 @@ objetivo.forEach((_,idx) => {
     palavra.appendChild(letra)
 })
 
-
+const botoes = document.getElementById('botoes')
 letras.forEach(l => {
     const btn = document.createElement('BUTTON')
     btn.setAttribute('type','button')
-    btn.classList.add('my-4 bg-emerald-600 rounded-lg px-4 py-2 shadow-lg shadow-emerald-600/20 hover:shadow-emerald-600/50 cursor-pointer')
     btn.innerHTML = l
     btn.addEventListener('click', () => {
         // Desabilitando o botão depois do 

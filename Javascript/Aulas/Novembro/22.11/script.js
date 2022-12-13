@@ -1,15 +1,7 @@
-$ = (id) => {
-    return document.getElementById(id);
-}
-
-create = (create) => {
-    return document.createElement(create);
-}
-
-const div = $('div');
-const body = $('body');
-const form = $('form');
-const botao = $('botao');
+const div = document.getElementById('div');
+const body = document.getElementById('body');
+const form = document.getElementById('form');
+const botao = document.getElementById('botao');
 const perguntas =
     [
         {
@@ -34,16 +26,18 @@ const perguntas =
 
 const montarP = () => {
     for (let i = 0; i < perguntas.length; i++) {
-        const p = create('h3');
+        const p = document.createElement('h3');
         form.appendChild(p);
         p.setAttribute('id', i)
         p.innerHTML = perguntas[i].pergunta;
         perguntas[i].alternativa.forEach(a => {
-            const respo = create('input');
+            const respo = document.createElement('input');
             form.appendChild(respo);
             respo.setAttribute("type", "radio");
             respo.setAttribute('name', perguntas[i].pergunta);
-            const label = create('label');
+            respo.setAttribute('id', perguntas[i].pergunta);
+            const label = document.createElement('label');
+            label.setAttribute('for', perguntas[i].pergunta);
             label.innerHTML = a.texto;
             form.appendChild(respo);
             form.appendChild(label);
@@ -55,7 +49,7 @@ const montarP = () => {
 montarP();
 
 const montarDiv = () => {
-    const divRespsotas = create('div');
+    const divRespsotas = document.createElement('div');
     divRespsotas.setAttribute('id','div-respostas');
 }
 
@@ -63,10 +57,10 @@ botao.addEventListener('click', () => {
     // const form = document.forms[0]
     // const x =form.elemnts.namedItem('p1').value
     // alert(x)
-    const divRespsotas = create('div');
+    const divRespsotas = document.createElement('div');
     divRespsotas.setAttribute('id','div-respostas');
-    const resposta1 = create('h4');
-    const resposta2 = create('h4');
+    const resposta1 = document.createElement('h4');
+    const resposta2 = document.createElement('h4');
     resposta1.innerHTML = perguntas[0].resposta;
     divRespsotas.appendChild(resposta1);
     resposta2.innerHTML = perguntas[1].resposta;
